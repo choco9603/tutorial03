@@ -70,8 +70,8 @@ function init(){
   }
   
   //平行光源
-  const directionalLight = new THREE.DirectionalLight(0xffffff);
-  directionalLight.position.set(1, 1, 1);
+  const directionalLight = new THREE.DirectionalLight(0xffffff,10);
+  directionalLight.position.set(100, 100, 100);
   scene.add(directionalLight);
   
   // document.addEventListener("mousemove",(event)=>{
