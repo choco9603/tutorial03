@@ -30,7 +30,7 @@ function init(){
   
   //画像を読み込む
   const loader = new THREE.TextureLoader();
-  const texture = loader.load('/moon_map.tiff');
+  const texture = loader.load('/moon_map.jpeg');
   //マテリアルテクスチャーを設定
   const material = new THREE.MeshStandardMaterial({
     map:texture,
@@ -70,7 +70,7 @@ function init(){
   }
   
   //平行光源
-  const directionalLight = new THREE.DirectionalLight(0xffffff,2);
+  const directionalLight = new THREE.DirectionalLight(0xffffff,1.5);
   directionalLight.position.set(1,1,1);
   //シーンに追加
   scene.add(directionalLight);
