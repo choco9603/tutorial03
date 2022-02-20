@@ -70,14 +70,13 @@ function init(){
   }
   
   //平行光源
-  const directionalLight = new THREE.DirectionalLight(0xffffff,2);
-  directionalLight.position.set(1,1,1);
-  //シーンに追加
+  const directionalLight = new THREE.DirectionalLight(0xffffff);
+  directionalLight.position.set(1, 1, 1);
   scene.add(directionalLight);
   
-  document.addEventListener("mousemove",(event)=>{
-    mouseX = event.pageX;
-  });
+  // document.addEventListener("mousemove",(event)=>{
+  //   mouseX = event.pageX;
+  // });
   
   tick();
   

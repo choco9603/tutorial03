@@ -20,7 +20,7 @@ function init(){
   
   //カメラを作成
   const camera = new THREE.PerspectiveCamera(45,width/height);
-  camera.position.set(0,0,+1000);
+  camera.position.set(0,0,1000);
   
   //球体を作成
   const geometry = new THREE.SphereGeometry(300,30,30);
@@ -75,9 +75,9 @@ function init(){
   //シーンに追加
   scene.add(directionalLight);
   
-  document.addEventListener("mousemove",(event)=>{
-    mouseX = event.pageX;
-  });
+  // document.addEventListener("mousemove",(event)=>{
+  //   mouseX = event.pageX;
+  // });
   
   tick();
   
@@ -91,7 +91,7 @@ function init(){
     //camera.position.z = 1000 * Math.cos(radian);
     
     //カメラ方向を原点へ固定
-    camera.lookAt(new THREE.Vector3(0,0,0));
+    //camera.lookAt(new THREE.Vector3(0,0,0));
     //レンダリング
     renderer.render(scene,camera);
     requestAnimationFrame(tick);
