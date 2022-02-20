@@ -33,16 +33,16 @@ function init(){
   const geometry = new THREE.SphereGeometry(300,30,30);
   
   //マテリアルを作成(色指定)
-  //const material = new THREE.MeshStandardMaterial({color:0xff0000});
+  const material = new THREE.MeshStandardMaterial({color:0xff0000});
   
   //画像を読み込む
-  const loader = new THREE.TextureLoader();
-  const texture = loader.load('/moon_map.jpeg');
+  //const loader = new THREE.TextureLoader();
+  //const texture = loader.load('/moon_map.jpeg');
   //マテリアルテクスチャーを設定
-  const material = new THREE.MeshStandardMaterial({
-    map:texture,
-    side:THREE.DoubleSide,
-  });
+  //const material = new THREE.MeshStandardMaterial({
+    //map:texture,
+    //side:THREE.DoubleSide,
+  //});
   //メッシュ作成
   const moonMesh = new THREE.Mesh(geometry,material);
   
