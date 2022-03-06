@@ -30,7 +30,7 @@ function init(){
   
   //画像を読み込む
   const loader = new THREE.TextureLoader();
-  const texture = loader.load('https://github.com/choco9603/tutorial03/blob/master/moon_map.jpeg');
+  const texture = loader.load('https://github.com/choco9603/tutorial03/blob/master/moon_map.jpeg?raw=true');
   //マテリアルテクスチャーを設定
   const material = new THREE.MeshStandardMaterial({
     map:texture,
