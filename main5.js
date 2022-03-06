@@ -35,7 +35,7 @@ function init(){
   //マテリアルを作成(色指定)
   //const material = new THREE.MeshStandardMaterial({color:0xff0000});
   
-  const material = new THREE.MeshPhongMaterial({color:0x008000,wireframe:true});
+  const material = new THREE.MeshPhongMaterial({color:0xff00ff,wireframe:true});
   
   //画像を読み込む
   //const loader = new THREE.TextureLoader();
